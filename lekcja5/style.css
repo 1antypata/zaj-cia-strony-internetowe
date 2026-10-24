@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 15%);
+}
+
+.postcard {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  /* TODO: background sky gradient */
+  background: linear-gradient(90deg,rgba(48, 126, 209, 1) 0%, rgba(190, 199, 87, 1) 50%, rgba(240, 5, 5, 1) 100%);
+}
+
+.sun {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  width: 80px;
+  height: 80px;
+  /* TODO: sun shape and glow */
+  border-radius: 156px 165px 135px 121px;
+  -webkit-border-radius: 156px 165px 135px 121px;
+  -moz-border-radius: 156px 165px 135px 121px;
+  border: 60px solid #d9ff50;
+
+  /* TODO: sun color experiment */
+  background: linear-gradient(90deg,rgba(48, 126, 209, 1) 0%, rgba(190, 199, 87, 1) 50%, rgba(60, 84, 58, 1) 100%);
+}
+
+.hills {
+  position: absolute;
+  bottom: 30%;
+  left: -10%;
+  width: 120%;
+  height: 45%;
+  /* TODO: hills shape */
+  background: radial-gradient(
+    ellipse 120% 60% at 50% 100%,
+    hsl(35, 87%, 35%),
+    hsl(120, 40%, 25%)
+  );
+  border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+}
+
+.water {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 32%;
+  /* TODO: water color and transparency */
+
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: Georgia, serif;
+  /* TODO: text styling and shadow */
+  text-shadow: -15px 31px 2px rgba(224, 249, 30, 0.6);
+  /* TODO: text color experiment */
+}
